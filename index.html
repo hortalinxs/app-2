@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App de Llamadas Falsas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="contenedor">
+        <div id="pantalla-telefono" class="pantalla-telefono">
+            <!-- Pantalla de llamada entrante -->
+            <div id="llamada-entrante" class="pantalla-llamada oculto">
+                <div class="info-llamante">
+                    <p id="nombre-llamante">No te llama</p>
+                    <p id="numero-llamante">+34 000 000 000</p>
+                </div>
+                <div class="acciones-llamada">
+                    <button id="aceptar-llamada" class="btn aceptar">Aceptar</button>
+                    <button id="rechazar-llamada" class="btn rechazar">Rechazar</button>
+                </div>
+            </div>
+
+            <!-- Pantalla de llamada saliente -->
+            <div id="llamada-saliente" class="pantalla-llamada oculto">
+                <div class="info-llamante">
+                    <p>Llamando a <span id="numero-marcado"></span>...</p>
+                </div>
+                <button id="terminar-llamada" class="btn rechazar">Terminar llamada</button>
+            </div>
+
+            <!-- Marcador de teléfono -->
+            <div class="pantalla-marcador">
+                <input type="text" id="pantalla" readonly placeholder="Introduce el número" />
+                <div class="teclado-numerico">
+                    <button class="btn-num">1</button>
+                    <button class="btn-num">2</button>
+                    <button class="btn-num">3</button>
+                    <button class="btn-num">4</button>
+                    <button class="btn-num">5</button>
+                    <button class="btn-num">6</button>
+                    <button class="btn-num">7</button>
+                    <button class="btn-num">8</button>
+                    <button class="btn-num">9</button>
+                    <button class="btn-num">0</button>
+                </div>
+                <button id="llamar" class="btn llamar">Llamar</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
